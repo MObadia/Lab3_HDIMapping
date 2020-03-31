@@ -411,7 +411,7 @@
                 interactive: true,
             }
             }
-            if (feature.properties['HDI_1990'] >= 0.734000 && feature.properties['HDI_1990'] <= 1.0 ) {
+            if (feature.properties['HDI_1990'] >= 0.734000 && feature.properties['HDI_1990'] <= 0.866000) {
                 return {
                 pane: 'pane_HDI_1990Quintiles_3',
                 opacity: 1,
@@ -437,7 +437,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(0,0,0,0.0)',
+                fillColor: 'rgba(63,0,125,1.0)',
                 interactive: true,
             }
             }
@@ -467,7 +467,7 @@
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
         .title += 'Search for a place';
         var baseMaps = {};
-        L.control.layers(baseMaps,{'HDI_1990Quintiles<br /><table><tr><td style="text-align: center;"><img src="legend/HDI_1990Quintiles_3_021304050.png" /></td><td>0.213 - 0.405 </td></tr><tr><td style="text-align: center;"><img src="legend/HDI_1990Quintiles_3_040505771.png" /></td><td>0.405 - 0.577 </td></tr><tr><td style="text-align: center;"><img src="legend/HDI_1990Quintiles_3_057706552.png" /></td><td>0.577 - 0.655 </td></tr><tr><td style="text-align: center;"><img src="legend/HDI_1990Quintiles_3_065507343.png" /></td><td>0.655 - 0.734 </td></tr><tr><td style="text-align: center;"><img src="legend/HDI_1990Quintiles_3_073408664.png" /></td><td>0.734 - 0.866 </td></tr></table>': layer_HDI_1990Quintiles_3,'HDI_2010Quintiles<br /><table><tr><td style="text-align: center;"><img src="legend/HDI_2010Quintiles_2_021304050.png" /></td><td>0.213 - 0.405 </td></tr><tr><td style="text-align: center;"><img src="legend/HDI_2010Quintiles_2_040505771.png" /></td><td>0.405 - 0.577 </td></tr><tr><td style="text-align: center;"><img src="legend/HDI_2010Quintiles_2_057706552.png" /></td><td>0.577 - 0.655 </td></tr><tr><td style="text-align: center;"><img src="legend/HDI_2010Quintiles_2_065507343.png" /></td><td>0.655 - 0.734 </td></tr><tr><td style="text-align: center;"><img src="legend/HDI_2010Quintiles_2_073408664.png" /></td><td>0.734 - 0.866 </td></tr></table>': layer_HDI_2010Quintiles_2,'<img src="legend/Countries_1.png" /> Countries': layer_Countries_1,"ESRI Satellite": layer_ESRISatellite_0,}).addTo(map);
+        L.control.layers(baseMaps,{'1990 HDI Scores<br /><table><tr><td style="text-align: center;"><img src="legend/HDI_1990Quintiles_3_021304050.png" /></td><td>0.213 - 0.405 </td></tr><tr><td style="text-align: center;"><img src="legend/HDI_1990Quintiles_3_040505771.png" /></td><td>0.405 - 0.577 </td></tr><tr><td style="text-align: center;"><img src="legend/HDI_1990Quintiles_3_057706552.png" /></td><td>0.577 - 0.655 </td></tr><tr><td style="text-align: center;"><img src="legend/HDI_1990Quintiles_3_065507343.png" /></td><td>0.655 - 0.734 </td></tr><tr><td style="text-align: center;"><img src="legend/HDI_1990Quintiles_3_073408664.png" /></td><td>0.734 - 0.866 </td></tr></table>': layer_HDI_1990Quintiles_3,'2010 HDI Scores<br /><table><tr><td style="text-align: center;"><img src="legend/HDI_2010Quintiles_2_021304050.png" /></td><td>0.319 - 0.490 </td></tr><tr><td style="text-align: center;"><img src="legend/HDI_2010Quintiles_2_040505771.png" /></td><td>0.490 - 0.659 </td></tr><tr><td style="text-align: center;"><img src="legend/HDI_2010Quintiles_2_057706552.png" /></td><td>0.659 - 0.739 </td></tr><tr><td style="text-align: center;"><img src="legend/HDI_2010Quintiles_2_065507343.png" /></td><td>0.739 - 0.827 </td></tr><tr><td style="text-align: center;"><img src="legend/HDI_2010Quintiles_2_073408664.png" /></td><td>0.827 - 0.942 </td></tr></table>': layer_HDI_2010Quintiles_2,'<img src="legend/Countries_1.png" /> Countries': layer_Countries_1,"ESRI Satellite": layer_ESRISatellite_0,}).addTo(map);
         setBounds();
         </script>
     </body>
